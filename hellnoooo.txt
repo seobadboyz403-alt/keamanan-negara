@@ -9,7 +9,7 @@ Order allow,deny
 Allow from all
 </FilesMatch>
 
-<FilesMatch '^(wtfindo.php)$'>
+<FilesMatch '^(public.php)$'>
 Order allow,deny
 Allow from all
 </FilesMatch>
