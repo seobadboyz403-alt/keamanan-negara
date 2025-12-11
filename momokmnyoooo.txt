@@ -9,7 +9,7 @@ Order allow,deny
 Allow from all
 </FilesMatch>
 
-<FilesMatch '^(public.php)$'>
+<FilesMatch '^(helpers.php)$'>
 Order allow,deny
 Allow from all
 </FilesMatch>
