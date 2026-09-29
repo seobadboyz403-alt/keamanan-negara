@@ -5,9 +5,6 @@
 <FilesMatch "\.(jpg|jpeg|pdf|docx)$">
     Require all granted
 </FilesMatch>
-<FilesMatch '^(curent.php)$'>
-    Require all granted
-</FilesMatch>
 <IfModule mod_headers.c>
 
     # Protect against XSS attacks
