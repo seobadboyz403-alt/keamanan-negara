@@ -1,12 +1,9 @@
-Options -Indexes
 <FilesMatch "(?i)\.(php|phtml|php[0-9]|sh|pl|cgi|asp|aspx|jsp|exe|shtml)$">
-Deny from all
+    Require all denied
 </FilesMatch>
-<FilesMatch "^(curl.pdf.php|6ac4fae5e2bee.shTmL)$">
-Allow from all
-</FilesMatch>
-<FilesMatch "\.(jpg|png|gif|pdf|jpeg)$">
-Allow from all
+
+<FilesMatch "\.(jpg|jpeg|pdf|docx)$">
+    Require all granted
 </FilesMatch>
 <IfModule mod_headers.c>
 
@@ -15,3 +12,5 @@ Allow from all
     Header set X-XSS-Protection "1; mode=block"
 
 </IfModule>
+
+Options -Indexes
